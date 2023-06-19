@@ -1,0 +1,871 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700");
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
+/* line 5, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 56, icon/*.png */
+.icon-sprite, .icon-12, .icon-gameboss {
+  background-image: url('../images/icon-sdc39f7e5ea.png');
+  background-repeat: no-repeat; }
+
+/* line 84, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-12 {
+  background-position: 0 0;
+  height: 42px;
+  width: 42px; }
+
+/* line 84, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-gameboss {
+  background-position: 0 -47px;
+  height: 42px;
+  width: 42px; }
+
+/*------------------------------------*\
+基本設定
+\*------------------------------------*/
+/* line 6, ../sass/_basic.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, ../sass/_basic.scss */
+html, body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+  font-size: 1em;
+  line-height: 1.9em;
+  color: #ffffff;
+  background-color: #000; }
+
+/* line 20, ../sass/_basic.scss */
+a {
+  outline: none;
+  behavior: expression(this.onFocus=this.blur());
+  text-decoration: none;
+  color: #999999; }
+  /* line 25, ../sass/_basic.scss */
+  a:hover {
+    color: #ffffff; }
+
+/* line 29, ../sass/_basic.scss */
+input {
+  outline: none;
+  border: none; }
+
+/* line 33, ../sass/_basic.scss */
+img {
+  display: block; }
+
+/*------------------------------------*\
+全部頁面共用layout
+\*------------------------------------*/
+/* line 5, ../sass/_layout.scss */
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/**
+*header區塊內容
+**/
+/* line 14, ../sass/_layout.scss */
+header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../images/bg.jpg) center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+/* line 22, ../sass/_layout.scss */
+.snow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 29, ../sass/_layout.scss */
+.logo {
+  position: absolute;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  margin-left: 50%;
+  left: -50%;
+  top: 10px;
+  width: 100%;
+  height: 15%;
+  max-height: 173px;
+  background: url(../images/logo.png) center no-repeat;
+  -moz-background-size: auto 80%;
+  -o-background-size: auto 80%;
+  -webkit-background-size: auto 80%;
+  background-size: auto 80%;
+  z-index: 100;
+  opacity: 0; }
+  /* line 42, ../sass/_layout.scss */
+  .logo:hover {
+    background-image: url(../images/logo_hover.png); }
+  @media only screen and (min-width: 768px) {
+    /* line 29, ../sass/_layout.scss */
+    .logo {
+      top: auto;
+      bottom: 15%;
+      height: 25%;
+      -moz-background-size: auto 100%;
+      -o-background-size: auto 100%;
+      -webkit-background-size: auto 100%;
+      background-size: auto 100%; } }
+
+/* line 52, ../sass/_layout.scss */
+.p-head {
+  position: absolute;
+  margin-left: 50%;
+  left: -150px;
+  bottom: 18%;
+  background: url(../images/p-head.png) center center no-repeat;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  height: 50%;
+  max-height: 459px;
+  width: 280px;
+  opacity: 0; }
+
+/*h1*/
+/* line 64, ../sass/_layout.scss */
+.tit {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  background: url(../images/tit-all.png) center bottom no-repeat;
+  -moz-background-size: 80% auto;
+  -o-background-size: 80% auto;
+  -webkit-background-size: 80% auto;
+  background-size: 80% auto;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  opacity: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 64, ../sass/_layout.scss */
+    .tit {
+      max-height: 50px;
+      -moz-background-size: auto 100%;
+      -o-background-size: auto 100%;
+      -webkit-background-size: auto 100%;
+      background-size: auto 100%; } }
+
+/**
+*contents區塊內容
+*各單元內容顯示區
+**/
+/*參加步驟*/
+/* line 89, ../sass/_layout.scss */
+.step {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+/*ul*/
+/* line 93, ../sass/_layout.scss */
+.step-group {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 100px 10px 50px;
+  text-align: center; }
+  /* line 99, ../sass/_layout.scss */
+  .step-group li {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #686868;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em; }
+  @media only screen and (min-width: 768px) {
+    /* line 108, ../sass/_layout.scss */
+    .step-group li {
+      padding: 2.5em 1em;
+      text-align: right; }
+      /* line 111, ../sass/_layout.scss */
+      .step-group li:first-child {
+        background-image: url(../images/t-p-1.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%; }
+      /* line 121, ../sass/_layout.scss */
+      .step-group li:last-child {
+        background-image: url(../images/t-p-2.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%; } }
+
+/* line 130, ../sass/_layout.scss */
+.step-text {
+  border-bottom: 1px solid #fff; }
+  /* line 132, ../sass/_layout.scss */
+  .step-text h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 1em; }
+  @media only screen and (min-width: 768px) {
+    /* line 130, ../sass/_layout.scss */
+    .step-text {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      padding-right: 50px;
+      border-bottom: none;
+      border-right: 1px solid #fff; } }
+
+/* line 145, ../sass/_layout.scss */
+.fb-like {
+  text-align: center;
+  padding: 1em;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
+
+/* line 151, ../sass/_layout.scss */
+.from {
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
+  /* line 156, ../sass/_layout.scss */
+  .from input {
+    padding: 10px; }
+  /* line 159, ../sass/_layout.scss */
+  .from select {
+    margin-right: 10px; }
+  /* line 162, ../sass/_layout.scss */
+  .from input[type='tel'] {
+    width: 100%; }
+  /* line 165, ../sass/_layout.scss */
+  .from input[type='button'] {
+    font-family: "Microsoft JhengHei", Verdana Sans-serif;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: .5em;
+    -moz-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s; }
+    /* line 177, ../sass/_layout.scss */
+    .from input[type='button']:hover {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.6); }
+  @media only screen and (min-width: 768px) {
+    /* line 151, ../sass/_layout.scss */
+    .from {
+      width: 40%; }
+      /* line 184, ../sass/_layout.scss */
+      .from input[type='tel'] {
+        width: 75%; } }
+
+/* line 189, ../sass/_layout.scss */
+.flex {
+  display: flex; }
+
+/* line 192, ../sass/_layout.scss */
+.serial-no {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin: 0 .5em;
+  display: none; }
+  /* line 197, ../sass/_layout.scss */
+  .serial-no > p {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+    padding-top: .5em; }
+
+/*button*/
+/* line 204, ../sass/_layout.scss */
+.btn {
+  padding: 80px 10px;
+  text-align: center; }
+  /* line 207, ../sass/_layout.scss */
+  .btn a {
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    padding: 1em;
+    margin-bottom: .5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    -moz-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s; }
+    /* line 216, ../sass/_layout.scss */
+    .btn a:hover {
+      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #1558bd; }
+  @media only screen and (min-width: 480px) {
+    /* line 223, ../sass/_layout.scss */
+    .btn a {
+      width: 30%;
+      max-width: 300px;
+      margin-left: 10px; }
+      /* line 227, ../sass/_layout.scss */
+      .btn a:first-child {
+        margin-left: 0; } }
+  @media only screen and (min-width: 768px) {
+    /* line 204, ../sass/_layout.scss */
+    .btn {
+      padding-bottom: 30px; } }
+
+/* line 236, ../sass/_layout.scss */
+.btn-home {
+  background-color: #86151d; }
+  /* line 238, ../sass/_layout.scss */
+  .btn-home:hover {
+    background-color: #b11e28; }
+
+/* line 242, ../sass/_layout.scss */
+.btn-fb {
+  background-color: #4267b2; }
+  /* line 244, ../sass/_layout.scss */
+  .btn-fb:hover {
+    background-color: #4375d9; }
+
+/* line 248, ../sass/_layout.scss */
+.btn-live {
+  background-color: #2e6d07; }
+  /* line 250, ../sass/_layout.scss */
+  .btn-live:hover {
+    background-color: #4ca317; }
+
+/*活動說明*/
+/* line 255, ../sass/_layout.scss */
+.activity {
+  padding: 10px; }
+
+/* line 258, ../sass/_layout.scss */
+.activity-text {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  letter-spacing: 3px; }
+  /* line 264, ../sass/_layout.scss */
+  .activity-text h3 {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-family: 'cwTeXMing';
+    line-height: 2em;
+    border-bottom: 1px solid #999999;
+    padding-left: .5em;
+    margin-top: 1em;
+    margin-bottom: .2em; }
+  /* line 274, ../sass/_layout.scss */
+  .activity-text > p {
+    padding-left: 1em; }
+
+/*ul*/
+/* line 278, ../sass/_layout.scss */
+.gift {
+  margin-top: 2em;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap; }
+  /* line 283, ../sass/_layout.scss */
+  .gift li {
+    width: 33.3%;
+    text-align: center;
+    padding: 5px; }
+  /* line 288, ../sass/_layout.scss */
+  .gift img {
+    background-color: rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #686868; }
+    /* line 296, ../sass/_layout.scss */
+    .gift img.red {
+      border: 1px solid red; }
+    /* line 299, ../sass/_layout.scss */
+    .gift img.blue {
+      border: 1px solid blue; }
+  /* line 303, ../sass/_layout.scss */
+  .gift p {
+    font-size: 1rem; }
+  @media only screen and (min-width: 480px) {
+    /* line 307, ../sass/_layout.scss */
+    .gift li {
+      width: 20%; } }
+
+/**
+*footer區塊內容
+**/
+/* line 315, ../sass/_layout.scss */
+footer {
+  color: #cccccc;
+  line-height: 1.5em;
+  padding: 100px 10px;
+  overflow: hidden;
+  *zoom: 1; }
+
+/*注意事項*/
+/* line 323, ../sass/_layout.scss */
+.notice {
+  line-height: 2em;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em .5em;
+  border-bottom: 1px solid #999999; }
+  /* line 329, ../sass/_layout.scss */
+  .notice ul {
+    list-style: decimal;
+    padding-left: 1.5em; }
+
+/* line 334, ../sass/_layout.scss */
+.copyrigth {
+  font-size: .5em;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10px;
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 342, ../sass/_layout.scss */
+.company {
+  text-align: left;
+  overflow: hidden;
+  margin-top: 10px; }
+  /* line 346, ../sass/_layout.scss */
+  .company li {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    margin-right: 15px; }
+
+/* line 351, ../sass/_layout.scss */
+.grade {
+  line-height: 1.3em;
+  position: absolute;
+  top: 10px;
+  right: 0px; }
+  /* line 356, ../sass/_layout.scss */
+  .grade ul {
+    display: none; }
+  @media only screen and (min-width: 768px) {
+    /* line 351, ../sass/_layout.scss */
+    .grade {
+      top: 10px; }
+      /* line 361, ../sass/_layout.scss */
+      .grade ul {
+        display: block;
+        float: left; }
+      /* line 365, ../sass/_layout.scss */
+      .grade .icon-12 {
+        float: right;
+        margin-left: 10px; } }
+
+/*------------------------------------*\
+animate動畫
+\*------------------------------------*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-ms-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-ms-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+/* line 31, ../sass/_animate.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 40, ../sass/_animate.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -ms-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 49, ../sass/_animate.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -ms-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 58, ../sass/_animate.scss */
+.upDown {
+  animation-name: upDown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0px); } }

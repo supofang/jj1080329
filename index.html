@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <title>主宰之王_事前登錄進行中!!</title>
+  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'>
+  <style>
+    .loading {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(images/svg/Rolling-1s-100px.svg) center no-repeat #000;
+      background-size: 50px;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      $(".loading").fadeOut(1500);
+      add();
+    }
+    function add() {
+      var a1 = $(".logo");
+      var a2 = $(".tit");
+      setTimeout(function () { a1.addClass('fadeInUp') }, 1000);
+      setTimeout(function () { a2.addClass('fadeInDown') }, 1000);
+    }
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script type="text/javascript" src="js/snow.js"></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.dev.min.js'></script>
+  <script type="text/javascript" src="js/parallax.min.js"></script>
+</head>
+
+<body>
+  <!--FB讚按扭程式-->
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div class="loading"></div>
+  <article class="wrap">
+    <header>
+      <a class="logo" href="#" target="_blank"></a>
+      <h1 class="tit">
+        <div>事前登錄進行中</div>
+      </h1>
+      <div class="snow"></div>
+    </header>
+    <section class="step parallax-window" data-parallax="scroll" data-image-src="images/bg2.jpg">
+      <div class="activity-text">
+        <h3>活動說明</h3>
+        <p>即日起 ～2018/12/24 23:59 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore amet,
+          veritatis, labore tempora itaque tenetur ullam nisi hic ut assumenda deleniti rerum non quibusdam eveniet est
+          consequuntur asperiores repellendus?</p>
+        <!-- <div class="btn">
+          <a href="#" target="_blank">官網</a>
+          <a href="https://www.facebook.com/gameboss.tbs/?fref=ts" target="_blank">FACEBOOK</a>
+        </div> -->
+
+        <ul class="step-group">
+          <li>
+            <div class="step-text">
+              <h4>STEP1</h4>
+              <p>請加入 主宰之王 粉絲團</p>
+            </div>
+            <div class="fb-like" data-href="https://www.facebook.com/gameboss.tbs/" data-layout="button"
+              data-action="like" data-size="large" data-show-faces="false" data-share="false">
+            </div>
+          </li>
+          <li>
+            <div class="step-text">
+              <h4>STEP2</h4>
+              <p>領取獎勵</p>
+            </div>
+            <from class="from">
+              <p>
+                <input type="radio" name="phone" id="android" checked>
+                <label for="android">Android</label>
+
+                <input type="radio" name="phone" id="ios">
+                <label for="ios">IOS</label>
+              </p>
+              <p>
+                <label class="flex" for="">
+                  <select name="" id="">
+                    <option value="">台灣+886</option>
+                    <option value="">香港+852</option>
+                    <option value="">澳門+853</option>
+                  </select>
+                  <input type="tel" class="form-control" placeholder="請輸入0以後的手機號碼" id="">
+                </label>
+              </p>
+              <p>
+                <input type="checkbox" class="custom-control-input" id="agree" checked="">
+                <a href="https://www.gameboss.com.tw/service/privacy" target="_blank">我同意隱私條款與個人資訊使用</a>
+              </p>
+              <input class="send" type="button" value="送出">
+            </from>
+          </li>
+        </ul>
+        <h3>活動獎勵</h3>
+        <ul class="gift">
+          <li>
+            <img src="images/gift1.png" alt="">
+            <p>坐騎進階丹x60</p>
+          </li>
+          <li>
+            <img src="images/gift2.png" alt="">
+            <p>仙翼進階丹x60</p>
+          </li>
+          <li>
+            <img src="images/gift3.png" alt="">
+            <p>黑暗契約x35</p>
+          </li>
+          <li>
+            <img src="images/gift4.png" alt="">
+            <p>禮金x3,000</p>
+          </li>
+          <li>
+            <img src="images/gift5.png" alt="">
+            <p>金幣x4,600,000</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <footer class="parallax-window" data-parallax="scroll" data-image-src="images/bg3.jpg">
+      <section class="notice">
+        <p>注意事項：</p>
+        <ul>
+          <li>活動時間：即日起 ~ 2019/X/X XX:XX。</li>
+          <li>收機號碼請確認填寫正確，填寫的手機號碼將是領取獎勵之憑證。</li>
+          <li>一組手機號碼限領取一組序號。</li>
+          <li>一組遊戲帳號限兌換一組序號，序號不可重複使用。</li>
+          <li>活動獎勵不可兌換現金、轉售，若有不當操作將取消領獎資格。</li>
+          <li>完成所有活動步驟，才符合領獎資格。</li>
+          <li>若因玩家個人因素，造成官方獎勵發送失敗，恕不補發。</li>
+          <li>活動獎勵於OB後透過手機號碼領取。</li>
+          <li>官方保留活動隨時修改條款的權利，如有任何爭議，皆以黑馬數位遊戲公司之解釋及本活動的最終決策權為準。</li>
+        </ul>
+        <p>客服中心<a href="https://www.gameboss.com.tw/service/service_report"
+            target="_blank">www.gameboss.com.tw/service/service_report</a></p>
+      </section>
+      <div class="copyrigth">
+        <ul class="company">
+          <li class="icon-gameboss"></li>
+          <li class="text-c">©2019 GameBoss Digital Entertainment Co., Ltd.</li>
+        </ul>
+        <div class="grade">
+          <ul>
+            <li>本遊戲部份內容涉及打鬥攻擊等</li>
+            <li>請注意遊玩時間避免沉迷於遊戲</li>
+            <li>本遊戲部份內容須另行支付費用</li>
+          </ul>
+          <div class="icon-12"></div>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+</body>
+
+</html>
